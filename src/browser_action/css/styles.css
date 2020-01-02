@@ -1,0 +1,202 @@
+
+/* for lower background */
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 20px;
+  text-align: center;
+    background-color: white;
+}
+
+#footer .logo {
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-left: 5px;
+}
+
+
+/* for sizing below logo */
+#footer .logo img, #footer .logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* for below content  */
+#footer .copyright {
+  width: 180px;
+  margin-left: 100px;
+  margin-top: 12.5px;
+  color: #333;
+  font-size: 12px;
+}
+
+/* relative positions of all icons  250 250 */
+
+#icons {
+  position: relative;
+  width:  250px;
+  height: 375px;
+  margin: 0 auto; zoom:1.2; margin-top:17px;
+}
+
+/* to make it square  */
+#icons .icon {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  opacity: 0.6;
+}
+  /* center all icons  */
+
+#icons .icon a img {
+  width: 100px;
+  height: 100px;
+    border-radius: 8px;
+}
+
+
+/* for white boxes */
+
+#icons .icon a {
+  padding: 10px;
+  background-color: #fff;
+  display: block;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+ /* to look bright when hover */
+#icons .icon:hover {
+  width: 120px;
+  height: 120px;
+  opacity: 1;
+}
+
+#icons .icon.icon-tl {
+  top: 0;
+  left: 0;
+}
+
+#icons .icon.icon-tl:hover {
+  top: -5px;
+  left: -5px;
+}
+
+#icons .icon.icon-tr {
+  top: 0;
+  right:0;
+}
+
+#icons .icon.icon-tr:hover {
+  top: -5px;
+  right: -5px;
+}
+
+#icons .icon.icon-bl {
+  top: 125px;
+  left: 0;
+}
+
+#icons .icon.icon-bl:hover {
+  bottom: -5px;
+  left: -5px;
+}
+/* #icons .icon.icon-bl:hover {
+  bottom: -5px;
+  left: -5px;
+} */
+
+
+#icons .icon.icon-br {
+  top:125px;
+  right:0px;
+}
+
+#icons .icon.icon-br:hover {
+  bottom: -5px;
+  right: -5px;
+}
+ #icons .icon.icon-hl {
+  bottom:0;
+  left: 0;
+}
+
+#icons .icon.icon-hl:hover {
+  bottom: :-5px;
+  left: -5px;
+}
+#icons .icon.icon-hr {
+  bottom:0;
+  right: 0;
+}
+
+#icons .icon.icon-hr:hover {
+  bottom:-5px;
+  right: : -5px;
+}
+.tab{
+border:2px solid transparent;
+}
+.activeh{
+
+  border-bottom-color:white;
+}
+
+.item {
+ background-color:white;
+ border:1px solid #efefef;
+ min-height:190px;
+}
+.item + .errorMsg {
+  display:none;
+}
+/* #events .closed{
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  opacity: 0.4;
+}
+
+#events .closed:hover {
+
+  opacity: 1;
+} */
+.cont {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+.text{
+  font-size:30px;
+  color:red;
+  text-align: center;
+
+}
+.cont:hover .image {
+  opacity: 0.3;
+}
+
+.cont:hover .middle {
+  opacity: 1;
+}

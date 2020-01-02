@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html>
+
+ <link rel="stylesheet" href="./css/styles.css">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+     <style>
+      body {
+       width: 400px;
+       height:600px;
+       overflow:auto;
+       margin: 0;
+       position:relative;
+       padding: 20px 20px 0 20px;
+       background-color: rgb(221, 65, 36);
+     }
+
+     </style>
+
+
+     <head>
+
+     </head>
+
+
+  <body ng-app="myapp" ng-controller="ctrl" ng-style="{'width': page=='events' ? '450px' : '359px'}">
+
+  <div style="color:White;padding-bottom:7px; font-family:sans-serif; cursor:pointer;border:1px solid transparent; border-bottom-color:rgb(200,200,250); margin-bottom:15px">
+
+
+    <b id="aa" class="tab"  ng-click="page='home'"  style="padding-bottom:7px; margin-left:15px;  "> &nbsp; Home</b>
+    <b id="aa" class="tab"  ng-click="page='events'"  style="padding-bottom:7px; margin-left:15px;  "> &nbsp; EVENTS </b>
+
+   </div>
+
+   <div ng-show="page=='events'" id="events">
+
+  <div class="card mb-3">
+    <div class="cont">
+     <img src="img/event5.jpg" alt="Avatar" class="image" >
+        <div class="middle">
+         <div class="text" style="color:green";>SOON IN JAN 2O2O (ROUND-2)</div>
+    </div>
+  </div>
+      <div class="card-body">
+         <h5 class="card-title">Junior Code Cracker</h5>
+           <p class="card-text">6 months into the college and nothing substantial done that could actually be an asset in your CV. What if I tell you that just winning an event could highlight your CV like nothing before? Well, yes- GLUG presents before you the most awaited and highlighted event of all time, organized for first years' exclusively.
+
+             An event that tests your logical skills and demands you to reason out with some of the best in the college on that piece of paper. Yes, Junior CodeCracker it is! Come in teams of 2, and relish the world of logical thinking like never before.</p>
+
+    <div class="card-body">
+    <p><strong>PREPARATION LINKS</strong></p>
+    <a href="https://dev.to/aviaryan/getting-started-with-competitive-programming---build-your-algorithm-skills-2fjd?fbclid=IwAR0hlSDcJbqbsC1OgG82L75a-UsJiOTunnXz6ahK3413Kq93zZkWu2y458o"  class="card-link" target="_blank">#link1</a>
+    <a href="https://www.geeksforgeeks.org/array-data-structure/?fbclid=IwAR3ZYeHCTe2dsWQdOTkNoiPXcMSebveFHeRbtu421pJd1q6lo-" class="card-link"  class="card-link" target="_blank">#link2</a>
+    <a href="https://www.codechef.com/problems/school?fbclid=IwAR0DSvvkPVN4Gkgxn3sSld1qXidLm5M6n9o8gtArN7YjJR3K8DCLdJuHmFc" class="card-link" class="card-link" target="_blank">#link3</a>
+       </div>
+    </div>
+  </div>
+
+
+  <div class="card mb-3">
+     <div class="cont">
+         <img src="img/gsoc.jpg"  class="image" >
+             <div class="middle">
+                <div class="text" style="color:green">COMING SOON IN 2020</div>
+            </div>
+        </div>
+ <div class="card-body">
+      <h5 class="card-title">GSOC HEAT 4.0</h5>
+       <p class="card-text">Who better to provide the intel of a battle than the soldiers themselves? It is time to take another step forward with the heat of enthusiasm because the past GSoCers bring to you the last push of guidance, into the summer of code.
+        GNU/Linux Users' Group and NitDgpOS once again presents "The GSoC Heat".
+        Get the war feels because winter is already here!</p>
+          <a href="#" class="btn btn-primary btn-md disabled" tabindex="-1" role="button" aria-disabled="true">Event link</a>
+  </div>
+</div>
+
+<div class="card mb-3">
+  <div class="cont">
+    <img src="img/event1.jpg"  class="image" >
+        <div class="middle">
+       <div class="text">COMING SOON IN 2020</div>
+  </div>
+</div>
+   <div class="card-body">
+     <h5 class="card-title">SCREENCAST QUIZ</h5>
+      <p class="card-text">GNU/Linux Users' Group brings to you the first event in our institute held exclusively for first years, the much awaited Screencast Quiz as promised! This quiz is based on the series of Screencast videos.</p>
+         <a href="#" class="btn btn-primary btn-md disabled" tabindex="-1" role="button" aria-disabled="true">Event link</a>
+  </div>
+  </div>
+
+<div class="card mb-3">
+    <div class="cont">
+       <img src="img/event2.jpg"  class="image" >
+         <div class="middle">
+        <div class="text">COMING SOON IN 2020</div>
+    </div>
+  </div>
+     <div class="card-body">
+        <h5 class="card-title">Linux BootCamp</h5>
+    <p class="card-text">Still fancying about Open Source? Overwhelmed by the thought of bossing technology? The GNU/Linux Users' Group brings to you the first platform which helps you venture into the Open Source world.
+      Here's presenting to you the Linux BootCamp where we shall brief you about the commands and applications of Linux. Not just that, we will also be installing Linux on your systems for you!!
+       Come with your charged laptops and let technology take over!</p>
+      <a href="#" class="btn btn-primary btn-md disabled" tabindex="-1" role="button" aria-disabled="true">Event link</a>
+  </div>
+</div>
+
+<div class="card mb-3">
+    <div class="cont">
+       <img src="img/event3.jpg" alt="Avatar" class="image" >
+          <div class="middle">
+    <div class="text">COMING SOON IN 2020</div>
+  </div>
+</div>
+    <div class="card-body">
+       <h5 class="card-title">Git Workshop</h5>
+       <p class="card-text">Ever contributed to open source? Heard about Github but able to understand how things work ? New to the world and want to explore new technologies?
+       No worries!
+       GNU/Linux Users' Group presents a workshop on Git.
+       This is going to be a hands on session so be there with your fully charged laptops!</p>
+    <a href="#" class="btn btn-primary btn-md disabled" tabindex="-1" role="button" aria-disabled="true">Event link</a>
+  </div>
+</div>
+
+
+<div class="card mb-3">
+   <div class="cont">
+       <img src="img/event4.jpg" alt="Avatar" class="image" >
+       <div class="middle">
+    <div class="text">COMING SOON IN 2020</div>
+  </div>
+</div>
+  <div class="card-body">
+      <h5 class="card-title">Digital Fortress</h5>
+       <p class="card-text">"If there's a place you go to, I am the one you need to know.". Promoting cryptography through the use of Open source Map APIs, Digital Fortress comes with a chance to become the Explorer, with clues yet again, in plain sight and Google your constant Boots. This Aavishkar let no swiper, swipe your odds.</p>
+    <a href="#" class="btn btn-primary btn-md disabled" tabindex="-1" role="button" aria-disabled="true">Event link</a>
+  </div>
+</div>
+
+<div class="p-3 mb-2 bg-white text-dark">N</div>
+
+</div>
+
+  <div id="icons" ng-show="page=='home'">
+
+    <div class="icon icon-tl">
+      <a href="https://nitdgplug.org" target="_blank">
+        <img src="img/browser.png" />
+      </a>
+    </div>
+
+    <div class="icon icon-tr">
+      <a href="https://www.facebook.com/nitdgplug" target="_blank">
+        <img src="img/facebook.png" />
+      </a>
+    </div>
+
+    <div class="icon icon-bl">
+      <a href="https://github.com/lugnitdgp" target="_blank">
+        <img src="img/github.png" />
+      </a>
+    </div>
+
+    <div class="icon icon-br">
+      <a href="https://www.youtube.com/channel/UCYZPnN5vP5B1sINLLkI1aDA" target="_blank">
+        <img src="img/yt.png" />
+      </a>
+    </div>
+
+    <div class="icon icon-hl">
+      <a href="https://gitter.im/lugnitdgp/home" target="_blank">
+        <img src="img/gitter.png" />
+      </a>
+    </div>
+
+    <div class="icon icon-hr">
+      <a href="https://www.instagram.com/nitdgplug/" target="_blank">
+        <img src="img/instagram.png" />
+      </a>
+    </div>
+
+  </div>
+
+  <div id="footer" style="margin-top:100px;">
+    <div class="logo"><img src="img/logo.png" /></div>
+    <div align="center" class="copyright"><strong>MAY BE SOURCE WITH YOU</strong></div>
+  </div>
+
+</body>
+
+<script src="../../js/jquery/jquery.min.js"> </script>
+<script src="../../js/angular.min.js"> </script>
+<script src="../../js/angular-filter.min.js"> </script>
+<script src="browser_action.js"> </script>
+
+</html>
