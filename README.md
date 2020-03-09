@@ -5,9 +5,11 @@ An Chrome Extension to keep track on and manage club events.
 It's a first version soon more features  will be added 
 
 
+## Workin GIF
 
+![dj](https://user-images.githubusercontent.com/57630799/76208527-de3be280-6225-11ea-86b1-2790580f6434.gif)
 
-Setup (Chrome)
+### Setup (Chrome)
 
 
 1.Download or git pull the repo (Unzip if downloaded)
@@ -23,5 +25,20 @@ Setup (Chrome)
 6.Browse to the place where you have unziped or pulled the repo in step 1.
 
 7.Extension is added to your browser. Enjoy !!
-
+ 
 8.Launch the extension by clicking the extension's logo or by hitting Ctrl+Shift+F from your keyboard.
+
+### Built With
+
+*JAVASCRIPT
+*ANGULAR JS (JUST TO GET TABS)
+*HTML
+*CSS
+
+### Author
+
+Yash Vardhan - Chrome-Extension-GLUG
+
+
+
+
