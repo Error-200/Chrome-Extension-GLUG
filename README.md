@@ -27,10 +27,10 @@ It's a first version soon more features  will be added
 
 ### Built With
 
-*JAVASCRIPT
-*ANGULAR JS (JUST TO GET TABS)
-*HTML
-*CSS
+-JAVASCRIPT
+-ANGULAR JS (JUST TO GET TABS)
+-HTML
+-CSS
 
 ### Author
 
