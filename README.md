@@ -5,9 +5,6 @@ An Chrome Extension to keep track on and manage club events.
 It's a first version soon more features  will be added 
 
 
-## Workin GIF
-
-![dj](https://user-images.githubusercontent.com/57630799/76208527-de3be280-6225-11ea-86b1-2790580f6434.gif)
 
 ### Setup (Chrome)
 
