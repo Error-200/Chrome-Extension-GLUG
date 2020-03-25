@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-
 <html>
 
  <link rel="stylesheet" href="./css/styles.css">
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
 
-     <style>
+ <style>
       body {
        width: 400px;
        height:600px;
@@ -14,28 +15,28 @@
        margin: 0;
        position:relative;
        padding: 20px 20px 0 20px;
-       background-color: #4D6D9A;
+       background-color: #333;
+       font-family: 'Roboto Slab', serif;
      }
-     </style>
+</style>
+<head>
+</head>
 
 
-     <head>
+  <body ng-app="myapp" ng-controller="ctrl" ng-style="{'width': page=='events' ? '400px' : '400px'}">
 
-     </head>
-
-
-  <body ng-app="myapp" ng-controller="ctrl" ng-style="{'width': page=='events' ? '450px' : '359px'}">
-
-  <div style="color:White;padding-bottom:7px; font-family:sans-serif; cursor:pointer;border:1px solid transparent; border-bottom-color:rgb(200,200,250); margin-bottom:15px">
+  <div style="color:White;padding-bottom:7px;  cursor:pointer;border:1px solid transparent; border-bottom-color:rgb(200,200,250); margin-bottom:15px">
 
 
-    <b id="aa" class="tab"  ng-click="page='home'"  style="padding-bottom:7px; margin-left:15px;  "> &nbsp; Home</b>
+    <b id="aa" class="tab"  ng-click="page='home'"  style="padding-bottom:7px; margin-left:15px;  "> &nbsp; HOME</b>
     <b id="aa" class="tab"  ng-click="page='events'"  style="padding-bottom:7px; margin-left:15px;  "> &nbsp; EVENTS </b>
 
    </div>
 
    <div ng-show="page=='events'" id="events">
+
    <hr>
+
      <div id="response"></div>
 
   <div class="p-3 mb-2 bg-white text-dark"><strong>NO INTERNET</strong></div>
@@ -43,56 +44,67 @@
 </div>
 
 
-<div id="icons" ng-show="page=='home'">
+<div id="home" ng-show="page=='home'">
 
-    <div class="icon icon-tl">
-      <a href="https://nitdgplug.org" target="_blank">
-        <img src="img/browser.png" />
-      </a>
+       <div id="icon">
+            <div class="icon icon-fb">
+               <a href="https://www.facebook.com/nitdgplug" target="_blank">
+                 <i class="fa fa-facebook" aria-hidden="true"></i></a>
+               </div>
+
+     <div class="icon icon-gi">
+         <a href="https://github.com/lugnitdgp" target="_blank">
+            <i class="fa fa-github" aria-hidden="true"></i></a>
+              </div>
     </div>
 
-    <div class="icon icon-tr">
-      <a href="https://www.facebook.com/nitdgplug" target="_blank">
-        <img src="img/facebook.png" />
-      </a>
+
+  <div id="icons">
+       <div class="icon icon-yt" >
+        <a href="https://www.youtube.com/channel/UCYZPnN5vP5B1sINLLkI1aDA" target="_blank">
+          <i class="fa fa-youtube" aria-hidden="true">
+         </i></a>
     </div>
 
-    <div class="icon icon-bl">
-      <a href="https://github.com/lugnitdgp" target="_blank">
-        <img src="img/github.png" />
-      </a>
-    </div>
+       <div class="icon icon-go">
+           <a href="https://nitdgplug.org" target="_blank">
+           <i class="fa fa-linux" aria-hidden="true">
+            </i></a>
+         </div>
+ </div>
 
-    <div class="icon icon-br">
-      <a href="https://www.youtube.com/channel/UCYZPnN5vP5B1sINLLkI1aDA" target="_blank">
-        <img src="img/yt.png" />
-      </a>
-    </div>
 
-    <div class="icon icon-hl">
-      <a href="https://gitter.im/lugnitdgp/home" target="_blank">
-        <img src="img/gitter.png" />
-      </a>
-    </div>
+   <div id="iconss">
+       <div class="icon icon-ig" >
+         <a href="https://www.instagram.com/nitdgplug/" target="_blank">
+            <i class="fab fa-instagram" aria-hidden="true">
+        </i></a>
+      </div>
 
-    <div class="icon icon-hr">
-      <a href="https://www.instagram.com/nitdgplug/" target="_blank">
-        <img src="img/instagram.png" />
-      </a>
-    </div>
+      <div class="icon icon-ma">
+         <a href="https://gitter.im/lugnitdgp/home" target="_blank">
+             <i class="fab fa-gitter" aria-hidden="true">
+          </i></a>
+       </div>
+     </div>
 
   </div>
 
-  <div id="footer" style="margin-top:100px;">
-    <div class="logo"><img src="img/logo.png" /></div>
-    <div align="center" class="copyright"><strong>MAY BE SOURCE WITH YOU</strong></div>
-  </div>
+</div>
+
+<div id="footer" style="margin-top:100px;">
+  <div class="logo"><img src="img/logo.png" /></div>
+ <div class="code"  role="content">MAY THE SOURCE BE WITH YOU </div>
+</div>
+
 
 </body>
+
 <script src="../../background.js"> </script>
 <script src="../../js/jquery/jquery.min.js"> </script>
 <script src="../../js/angular.min.js"> </script>
 <script src="../../js/angular-filter.min.js"> </script>
 <script src="browser_action.js"> </script>
+<script src="decrypt.js"> </script>
 
 </html>
