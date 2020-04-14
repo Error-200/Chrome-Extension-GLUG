@@ -1,4 +1,4 @@
-# Chrome-Extension-GLUG
+# Chrome-Extension-GLUG (V 1.2)
 
 An Chrome Extension to keep track on and manage club events. 
 
@@ -6,7 +6,7 @@ It's a first version soon more features  will be added
 
 ## Working GIF
 
-![fi](https://user-images.githubusercontent.com/57630799/76277369-8e552e00-62ae-11ea-8f57-4080f79102f1.gif)
+ ![](http://g.recordit.co/anMqT0f9Z9.gif)
 
 ### Setup (Chrome)
 
